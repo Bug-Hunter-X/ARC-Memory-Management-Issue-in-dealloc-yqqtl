@@ -1,0 +1,3 @@
+# Objective-C ARC Memory Management Bug
+
+This repository demonstrates a common error in Objective-C related to Automatic Reference Counting (ARC) and memory management within the `dealloc` method.  Failure to properly release or set to `nil` objects within `dealloc` can lead to memory leaks or crashes.  The example illustrates a simple class with a strong property; improper cleanup in `dealloc` results in a retain cycle.  The solution shows the corrected version with proper memory management.
